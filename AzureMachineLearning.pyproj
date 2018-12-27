@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Armstrong.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="AzureMachineLearning.py" />
     <Compile Include="class1.py">
       <SubType>Code</SubType>
@@ -28,9 +31,13 @@
     <Compile Include="moonwords\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Palindrome\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="moonwords\" />
+    <Folder Include="Palindrome\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
