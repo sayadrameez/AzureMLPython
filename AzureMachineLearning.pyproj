@@ -25,6 +25,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AzureMachineLearning.py" />
+    <Compile Include="BintoDecimal.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="class1.py">
       <SubType>Code</SubType>
     </Compile>
