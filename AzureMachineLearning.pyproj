@@ -24,6 +24,9 @@
     <Compile Include="Armstrong.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="AzureCognitiveServices.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="AzureMachineLearning.py" />
     <Compile Include="BintoDecimal.py">
       <SubType>Code</SubType>
@@ -35,6 +38,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Palindrome\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stemming.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
