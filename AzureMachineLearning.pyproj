@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c5137a15-c4c2-44b5-80a9-29e78b16c5c5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>AzureMachineLearning.py</StartupFile>
+    <StartupFile>AzureSpeechService.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,6 +28,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AzureMachineLearning.py" />
+    <Compile Include="AzureSpeechService.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AzureTranslateService.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="BintoDecimal.py">
       <SubType>Code</SubType>
     </Compile>
