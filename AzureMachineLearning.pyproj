@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c5137a15-c4c2-44b5-80a9-29e78b16c5c5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>AzureSpeechService.py</StartupFile>
+    <StartupFile>AzureLUISLanguageUnderstanding.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AzureCognitiveServices.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AzureLUISLanguageUnderstanding.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AzureMachineLearning.py" />
