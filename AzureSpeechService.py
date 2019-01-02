@@ -61,3 +61,10 @@ conn.close()
 
 #Play the wav
 Audio(data, autoplay=True)
+
+from pydub import AudioSegment
+from pydub.playback import play
+import io 
+from io import BytesIO
+song = AudioSegment.from_file(BytesIO(data), format="wav")
+play(song)

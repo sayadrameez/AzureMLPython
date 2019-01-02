@@ -31,6 +31,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AzureMachineLearning.py" />
+    <Compile Include="AzureMLSpeechtoLUIS.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="AzureSpeechService.py">
       <SubType>Code</SubType>
     </Compile>
@@ -47,6 +50,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Palindrome\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoundTest.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Stemming.py">
