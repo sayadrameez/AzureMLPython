@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c5137a15-c4c2-44b5-80a9-29e78b16c5c5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>AzureLUISLanguageUnderstanding.py</StartupFile>
+    <StartupFile>AzureMLSpeechtoLUIS.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>AzureMachineLearning</Name>
     <RootNamespace>AzureMachineLearning</RootNamespace>
+    <LaunchProvider>Web launcher</LaunchProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -25,6 +26,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AzureCognitiveServices.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AzureLoadImage.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AzureLUISLanguageUnderstanding.py">
@@ -44,6 +48,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="class1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DifferentSpeechRecogintions.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="moonwords\__init__.py">

@@ -10,12 +10,11 @@ endpointUrl = "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/5eb952f
 resp = requests.get('https://github.com/sayadrameez/AI-Introduction/raw/master/files/LightOn.wav')
 
 #Works
-from pydub import AudioSegment
-from pydub.playback import play
-import io 
-from io import BytesIO
-song = AudioSegment.from_file(BytesIO(resp.content), format="wav")
-
+#from pydub import AudioSegment
+#from pydub.playback import play
+#import io
+#from io import BytesIO
+#song = AudioSegment.from_file(BytesIO(resp.content), format="wav")
 
 speechKey = '2a6c8e2de7724dbe94a0ebfdea59a803'
 # Specify which audio file to use
@@ -23,16 +22,19 @@ speechKey = '2a6c8e2de7724dbe94a0ebfdea59a803'
 
 #audio = BytesIO(resp.content)
 # Convert Audio to Audio Source Format
-audio = sr.AudioData(resp.content, 16000, 2)
 
+#audio = sr.AudioData(BytesIO(resp.content), 16000, 2)
+
+#auddioBytes = resp.text.encode()
+audio = sr.AudioData(resp.content, 16000, 2)
 # Read the audio file
 r = sr.Recognizer()
 #with sr.AudioFile(audioFile) as source:
 #    audio = r.record(source)
 #r = sr.Recognizer()
-with sr.Microphone() as source: 
-    play(song)
-    audio = r.listen(source)
+#with sr.Microphone() as source:
+#    play(song)
+#    audio = r.listen(source)
 try:
     # transcribe speech using the Bing Speech API
     transcription = r.recognize_bing(audio, key=speechKey)
@@ -41,9 +43,10 @@ try:
     endpoint = endpointUrl + transcription.replace(" ","+")
     response = requests.get(endpoint)
     data = json.loads(response.content.decode("UTF-8"))
-
+    print(data)
     # Identify the top scoring intent
     intent = data["topScoringIntent"]["intent"]
+    print(intent)
     if (intent == "Light On"):
         img_url = 'https://raw.githubusercontent.com/MicrosoftLearning/AI-Introduction/master/files/LightOn.jpg'
     elif (intent == "Light Off"):
@@ -56,8 +59,9 @@ try:
     img = Image.open(BytesIO(response.content))
     imshow(img)
     
+
 except sr.UnknownValueError:
     print("Bing Speech could not understand audio")
 except sr.RequestError as e:
-    print (e)
+    print(e)
     print("Could not request results from the Bing Speech service; {0}".format(e))
