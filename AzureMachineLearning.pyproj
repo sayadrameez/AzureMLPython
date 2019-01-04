@@ -28,6 +28,12 @@
     <Compile Include="AzureCognitiveServices.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="AzureComputerVisionAPI.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AzureImageClassfication.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="AzureLoadImage.py">
       <SubType>Code</SubType>
     </Compile>
