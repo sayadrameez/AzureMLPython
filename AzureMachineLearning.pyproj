@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c5137a15-c4c2-44b5-80a9-29e78b16c5c5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>AzureVideo.py</StartupFile>
+    <StartupFile>AzureVISearch.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -54,6 +54,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AzureVideo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AzureVideoIndexerAPI.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AzureVISearch.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BintoDecimal.py">
