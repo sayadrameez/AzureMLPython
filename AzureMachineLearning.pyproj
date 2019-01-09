@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c5137a15-c4c2-44b5-80a9-29e78b16c5c5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>AzureVISearch.py</StartupFile>
+    <StartupFile>XmlnJSON.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -81,6 +81,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Stemming.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XmlnJSON.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
